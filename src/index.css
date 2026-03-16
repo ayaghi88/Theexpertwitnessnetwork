@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b;
+  --color-emerald-950: #022c22;
+
+  --color-gold-50: #fffdf2;
+  --color-gold-100: #fff9d6;
+  --color-gold-200: #ffefad;
+  --color-gold-300: #ffd970;
+  --color-gold-400: #ffc23d;
+  --color-gold-500: #f5a623;
+  --color-gold-600: #d98216;
+  --color-gold-700: #b35f12;
+  --color-gold-800: #914a13;
+  --color-gold-900: #783d14;
+  --color-gold-950: #451e07;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-emerald-950 bg-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+}
+
+.gold-text {
+  @apply text-gold-500;
+}
+
+.emerald-text {
+  @apply text-emerald-900;
+}
